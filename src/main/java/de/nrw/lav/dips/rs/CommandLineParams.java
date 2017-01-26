@@ -12,7 +12,7 @@ import java.util.Collection;
 
 final class CommandLineParams {
     private final static String PROG_NAME = "rscli";
-    private final static String PROG_VERSION = "0.1.0";
+    private final static String PROG_VERSION = "0.2.0-SNAPSHOT";
     @Parameter(names = {"-h", "--help"}, description = "show help message",
             help = true)
     private Boolean showHelp = false;
@@ -34,7 +34,7 @@ final class CommandLineParams {
     @Parameter(description = "input-file ...")
     private Collection<String> inputFilePaths = new ArrayList<String>();
     private Collection<File> inputFiles;
-    @Parameter(names = "--carter", // hidden = true,
+    @Parameter(names = "--carter", hidden = true,
             description = "use Carter mode (no parameter validation)")
     private Boolean carterMode = false;
 
