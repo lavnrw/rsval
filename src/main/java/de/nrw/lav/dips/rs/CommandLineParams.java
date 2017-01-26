@@ -12,7 +12,7 @@ import java.util.Collection;
 
 final class CommandLineParams {
     private final static String PROG_NAME = "rscli";
-    private final static String PROG_VERSION = "0.2.0-SNAPSHOT";
+    private final static String PROG_VERSION = "0.1.1";
     @Parameter(names = {"-h", "--help"}, description = "show help message",
             help = true)
     private Boolean showHelp = false;
