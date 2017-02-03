@@ -1,4 +1,4 @@
-package de.nrw.lav.dips.rs;
+package de.nrw.lav.dips.rsval;
 
 import com.beust.jcommander.IParameterValidator;
 import com.beust.jcommander.ParameterException;

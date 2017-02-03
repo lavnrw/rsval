@@ -1,4 +1,4 @@
-package de.nrw.lav.dips.rs;
+package de.nrw.lav.dips.rsval;
 
 final class Report {
     private final String inputFile;
@@ -20,8 +20,9 @@ final class Report {
         return result + "\tPDF/A-" + pdfaType + "\t" + inputFile;
     }
 
-    String toVerbose() {
-        return toString() + (details.isEmpty() ?
-                "" : System.getProperty("line.separator") + details);
+    String toString(Boolean verbose) {
+        String rest = (!verbose || details.isEmpty()) ? ""
+            : System.getProperty("line.separator") + details;
+        return toString() + rest;
     }
 }

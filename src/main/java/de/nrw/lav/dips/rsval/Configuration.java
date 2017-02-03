@@ -1,4 +1,4 @@
-package de.nrw.lav.dips.rs;
+package de.nrw.lav.dips.rsval;
 
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
@@ -10,11 +10,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 
-final class CommandLineParams {
-    private final static String PROG_NAME = "rscli";
-    private final static String PROG_VERSION = "0.1.1";
-    @Parameter(names = {"-h", "--help"}, description = "show help message",
-            help = true)
+final class Configuration {
+    private final static String PROG_NAME = "rsval";
+    private final static String PROG_VERSION = "0.2.0";
+    @Parameter(names = {"-h", "--help"},
+            description = "show this help message", help = true)
     private Boolean showHelp = false;
     @Parameter(names = "--version", description = "show version info")
     private Boolean showVersion = false;
@@ -29,16 +29,14 @@ final class CommandLineParams {
     @Parameter(names = {"-v", "--verbose"},
             description = "print more validation details")
     private Boolean verbose = false;
-    // @Parameter(names = {"-o", "--output"}, description = "output files")
-    // private String outputFiles;
-    @Parameter(description = "input-file ...")
+    @Parameter(description = "input files")
     private Collection<String> inputFilePaths = new ArrayList<String>();
     private Collection<File> inputFiles;
     @Parameter(names = "--carter", hidden = true,
             description = "use Carter mode (no parameter validation)")
     private Boolean carterMode = false;
 
-    CommandLineParams(String[] args) {
+    Configuration(String[] args) {
         JCommander jc = new JCommander(this);
         jc.setProgramName(PROG_NAME);
         try {
