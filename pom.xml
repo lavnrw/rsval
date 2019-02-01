@@ -4,11 +4,13 @@
   <groupId>de.nrw.lav.dips.rsval</groupId>
   <artifactId>rsval</artifactId>
   <packaging>jar</packaging>
-  <version>0.2.0</version>
+  <version>0.3.0</version>
   <name>Rendition Server Command Line PDF/A Validator</name>
   <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
   </properties>
   <dependencies>
     <dependency>
