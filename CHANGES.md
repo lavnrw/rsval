@@ -15,5 +15,3 @@ The --carter option is no longer listed in the help message.
 # Release 0.1.0 (2017-01-26)
 
 Initial release.
-
-<!-- vim: set filetype=markdown: -->
