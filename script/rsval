@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+
+# This is an example wrapper script for the rsval tool running on Linux (and
+# probably other Unix-like operating systems). Adapt it to your environment and
+# needs, make sure it is executable (chmod 755), and put it somewhere in your
+# PATH (e.g., `/usr/local/bin/rsval`).
+
+# Uncomment this line if you experience encoding issues with Umlaut characters
+# in file names when the Rendition Server is running on a Windows host.
+# export LANG=de_DE.ISO-8859-1
+
+# This line runs the rsval JAR file, threading through any command line
+# parameters that were given to this wrapper script (in the $@ variable). If
+# you didn't save your JAR file at the specified location `/opt/rs/rsval.jar`
+# you have to adapt the path.
+java -jar /opt/rs/rsval.jar "$@"
+
+# Use the following command instead if you like fancy colored terminal output.
+# java -jar /opt/rs/rsval.jar "$@" | grep -E --color '^(VALID|INVALID|ERROR)|$'
