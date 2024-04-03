@@ -3,6 +3,8 @@
 Command line client for the [SER Doxis4 Rendition Server][rs] PDF/A validation
 features, based on the Rendition Server Java API.
 
+[Deutschsprachige Anleitung | German User Guide](HOWTO.de.md)
+
 ## Installation
 
 Prerequisites:
