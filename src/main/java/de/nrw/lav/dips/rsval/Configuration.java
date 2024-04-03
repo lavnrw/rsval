@@ -8,7 +8,7 @@ import org.apache.commons.io.FileUtils;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
+import java.util.List;
 
 final class Configuration {
     private final static String PROG_NAME = "rsval";
@@ -33,8 +33,8 @@ final class Configuration {
             description = "print more validation details")
     private Boolean verbose = false;
     @Parameter(description = "input files")
-    private Collection<String> inputFilePaths = new ArrayList<String>();
-    private Collection<File> inputFiles;
+    private List<String> inputFilePaths = new ArrayList<String>();
+    private List<File> inputFiles;
     @Parameter(names = "--carter", hidden = true,
             description = "use Carter mode (no parameter validation)")
     private Boolean carterMode = false;
@@ -67,8 +67,8 @@ final class Configuration {
         inputFiles = createFiles(inputFilePaths);
     }
 
-    private Collection<File> createFiles(Collection<String> paths) {
-        Collection<File> fs = new ArrayList<File>();
+    private List<File> createFiles(List<String> paths) {
+        List<File> fs = new ArrayList<File>();
         for (String p : paths) {
             File f = new File(p);
             if (!(f.exists() && f.canRead())) {
