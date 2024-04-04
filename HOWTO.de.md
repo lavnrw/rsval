@@ -30,8 +30,8 @@ Für einen bequemeren Aufruf bietet es sich an, die JAR-Datei an einem zentralen
 Ort abzulegen und durch ein kleines Wrapper-Script ohne Pfadangabe und
 Java-Blabla aufrufbar zu machen (also `rsval` statt z.B. `java -jar
 C:\bin\rsval.jar`), aber das ist optional und abhängig von der individuellen
-Systemumgebung (z.B. Linux/Bash vs. Windows/PowerShell). Ein Beispiel für Linux
-findet sich in [`script/rsval`][script/rsval].
+Systemumgebung (z.B. Linux/Bash vs. Windows/PowerShell). Beispiele finden sich
+im Verzeichnis [`script`][script].
 
 [releases]: http://example.org/TODO
 
