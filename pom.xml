@@ -19,13 +19,6 @@
       <!-- This API is proprietary and must be provided separately. -->
       <scope>provided</scope>
     </dependency>
-    <!-- Used by dxrapi. -->
-    <dependency>
-      <groupId>commons-httpclient</groupId>
-      <artifactId>commons-httpclient</artifactId>
-      <version>3.1</version>
-      <scope>runtime</scope>
-    </dependency>
     <dependency>
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
