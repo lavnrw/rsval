@@ -5,7 +5,7 @@
   <artifactId>rsval</artifactId>
   <version>0.3.0</version>
   <name>Rendition Server Command Line PDF/A Validator</name>
-  <url>http://example.org/TODO</url>
+  <url>https://github.com/lavnrw/rsval</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>

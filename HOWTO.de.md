@@ -15,8 +15,8 @@ Conversion)][rscon] zur Konvertierung nach PDF/A.
 
 [ser]: https://www.sergroup.com/
 [rs]: https://web.archive.org/web/20181122130019/http://www.ser-solutions.com/media-library/overview/medien/server-side-format-conversion-doxis4-rendition-server.html
-[rsval]: http://example.org/TODO
-[rscon]: http://example.org/TODO
+[rsval]: https://github.com/lavnrw/rsval
+[rscon]: https://github.com/lavnrw/rscon
 
 ## Installation
 

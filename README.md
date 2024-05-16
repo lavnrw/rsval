@@ -29,7 +29,7 @@ available; examples for Linux and Windows can be found in the [script](script)
 directory.
 
 [ser]: https://www.sergroup.com/en/
-[releases]: http://example.org/TODO
+[releases]: https://github.com/lavnrw/rsval/releases
 
 ## Usage
 
