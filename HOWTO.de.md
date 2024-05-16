@@ -20,38 +20,13 @@ Conversion)][rscon] zur Konvertierung nach PDF/A.
 
 ## Installation
 
-Es wird eine Java-Laufzeitumgebung (JRE) ab Version 8, 64 Bit benötigt. Außerdem
-muss im Netzwerk ein Rendition Server erreichbar sein.
-
-Die [bereitgestellte JAR-Datei `rsval.jar`][releases] ist ohne Installation
-direkt ausführbar.
-
-Für einen bequemeren Aufruf bietet es sich an, die JAR-Datei an einem zentralen
-Ort abzulegen und durch ein kleines Wrapper-Script ohne Pfadangabe und
-Java-Blabla aufrufbar zu machen (also `rsval` statt z.B. `java -jar
-C:\bin\rsval.jar`), aber das ist optional und abhängig von der individuellen
-Systemumgebung (z.B. Linux/Bash vs. Windows/PowerShell). Beispiele finden sich
-im Verzeichnis [`script`][script].
-
-[releases]: http://example.org/TODO
+Siehe [README.md](README.md).
 
 ## Benutzung
 
-Die folgenden Beispiele gehen zwecks besserer Lesbarkeit davon aus, dass ein
-Wrapper-Script für das Kommando `rsval` eingerichtet wurde (s.o. im Abschnitt
-Installation). Ist das nicht der Fall, sind die Aufrufe entsprechend dem
-Speicherort der JAR-Datei anzupassen, z.B. folgendermaßen (oben mit, unten ohne
-Wrapper; die Dollarzeichen symbolisieren den Kommandozeilenprompt und werden
-nicht mit eingegeben):
-
-~~~console
-$ rsval --help
-$ java -jar C:\bin\rsval.jar --help
-~~~
-
-Die Beispiele gehen außerdem davon aus, dass der Rendition Server unter dem
-Hostnamen `rs.example.org` erreichbar ist. Auch das muss der eigenen Umgebung
-angepasst werden.
+Die folgenden Beispiele gehen davon aus, dass der Rendition Server unter dem
+Hostnamen `rs.example.org` erreichbar ist. In der Praxis muss das der eigenen
+Umgebung angepasst werden.
 
 Anzeige der verfügbaren Programmoptionen:
 

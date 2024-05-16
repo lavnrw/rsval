@@ -9,11 +9,11 @@
 # in file names when the Rendition Server is running on a Windows host.
 # export LANG=de_DE.ISO-8859-1
 
-# This line runs the rsval JAR file, threading through any command line
-# parameters that were given to this wrapper script (in the $@ variable). If
-# you didn't save your JAR file at the specified location `/opt/rs/rsval.jar`
-# you have to adapt the path.
-java -jar /opt/rs/rsval.jar "$@"
+# This line runs the rsval tool, threading through any command line parameters
+# that were given to this wrapper script (in the $@ variable). If you didn't
+# save your JAR files (usually, rsval.jar and dxrapi.jar) in the specified
+# directory `/opt/rs` you have to adapt the path.
+java -cp '/opt/rs/*' de.nrw.lav.dips.rsval.ValidationCLI "$@"
 
 # Use the following command instead if you like fancy colored terminal output.
-# java -jar /opt/rs/rsval.jar "$@" | grep -E --color '^(VALID|INVALID|ERROR)|$'
+# java -cp '/opt/rs/*' de.nrw.lav.dips.rsval.ValidationCLI "$@" | grep -E --color '^(VALID|INVALID|ERROR)|$'

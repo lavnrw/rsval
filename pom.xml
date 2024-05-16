@@ -16,6 +16,8 @@
       <groupId>com.ser.renditionserver</groupId>
       <artifactId>dxrapi</artifactId>
       <version>3.3.0.166</version>
+      <!-- This API is proprietary and must be provided separately. -->
+      <scope>provided</scope>
     </dependency>
     <!-- Used by dxrapi. -->
     <dependency>
@@ -42,30 +44,7 @@
   </dependencies>
   <build>
     <plugins>
-      <!-- Include local jar file. -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-install-plugin</artifactId>
-        <version>3.1.1</version>
-        <configuration>
-          <groupId>com.ser.renditionserver</groupId>
-          <artifactId>dxrapi</artifactId>
-          <version>3.3.0.166</version>
-          <file>${basedir}/lib/dxrapi.jar</file>
-          <packaging>jar</packaging>
-          <generatePom>true</generatePom>
-        </configuration>
-        <executions>
-          <execution>
-            <id>install-external-jar</id>
-            <phase>validate</phase>
-            <goals>
-              <goal>install-file</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <!-- Build executable jar file including dependencies. -->
+      <!-- Build JAR including dependencies (except where scope=provided). -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-assembly-plugin</artifactId>
