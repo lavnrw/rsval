@@ -1,3 +1,7 @@
+# Release 1.0.0 (2024-05-16)
+
+First public release.
+
 # Release 0.3.0 (2019-02-01)
 
 Validation timeout can now be configured via command line option `--timeout`.
