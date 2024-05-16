@@ -15,7 +15,7 @@
     <dependency>
       <groupId>com.ser.renditionserver</groupId>
       <artifactId>dxrapi</artifactId>
-      <version>3.3.0.166</version>
+      <version>4.0.1.357</version>
       <!-- This API is proprietary and must be provided separately. -->
       <scope>provided</scope>
     </dependency>
