@@ -1,3 +1,7 @@
+# Release 1.0.1 (2024-06-04)
+
+Packaging bugfix, missing dependency.
+
 # Release 1.0.0 (2024-05-16)
 
 First public release.

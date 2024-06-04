@@ -12,7 +12,7 @@ import java.util.List;
 
 final class Configuration {
     private final static String PROG_NAME = "rsval";
-    private final static String PROG_VERSION = "1.0.0";
+    private final static String PROG_VERSION = "1.0.1";
     @Parameter(names = {"-h", "--help"},
             description = "show this help message", help = true)
     private Boolean showHelp = false;
