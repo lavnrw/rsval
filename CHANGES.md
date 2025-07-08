@@ -1,3 +1,7 @@
+# Release 1.0.2 (2025-07-08)
+
+Maintenance.
+
 # Release 1.0.1 (2024-06-04)
 
 Packaging bugfix, missing dependency.

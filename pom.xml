@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.nrw.lav.dips.rsval</groupId>
   <artifactId>rsval</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <name>Rendition Server Command Line PDF/A Validator</name>
   <url>https://github.com/lavnrw/rsval</url>
   <properties>
