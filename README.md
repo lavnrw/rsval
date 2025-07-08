@@ -90,7 +90,7 @@ development environment. For example, if you use Maven something like this
 should install it into your local repository (check your version number!):
 
 ~~~console
-$ mvn install:install-file -Dfile=dxrapi.jar -DgroupId=com.ser.renditionserver -DartifactId=dxrapi -Dversion=4.0.1.357 -Dpackaging=jar -DgeneratePom=true
+$ mvn install:install-file -Dfile=dxrapi.jar -DgroupId=com.ser.renditionserver -DartifactId=dxrapi -Dversion=12.0.0.387 -Dpackaging=jar -DgeneratePom=true
 ~~~
 
 Then run the following commands to build the `rsval` JAR file:
